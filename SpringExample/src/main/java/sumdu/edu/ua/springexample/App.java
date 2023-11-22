@@ -4,13 +4,18 @@
  */
 package sumdu.edu.ua.springexample;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 /**
  *
  * @author Oksana
  */
 public class App {
     public static void main(String[] args){
-        Soda a=new Soda();
+        ApplicationContext factory = new ClassPathXmlApplicationContext("spring.xml");
+        
+        Soda a=(Soda) factory.getBean("soda");
         a.setName("Cola");
         a.info();
     }
