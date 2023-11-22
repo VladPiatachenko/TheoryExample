@@ -11,7 +11,16 @@ package sumdu.edu.ua.springexample;
 public class Soda {
     String name;
     int size;
+    Promotion prom;
 
+    public Promotion getProm() {
+        return prom;
+    }
+
+    public void setProm(Promotion prom) {
+        this.prom = prom;
+    }
+    
     public int getSize() {
         return size;
     }
@@ -29,6 +38,7 @@ public class Soda {
     }
     
     public void info(){
-        System.out.println("It's "+name+" in "+size+"ml glass!");
+        System.out.println("It's "+name+" in "+size+"ml glass!\n"+prom);
+        
     }
 }

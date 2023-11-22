@@ -4,9 +4,14 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
                             http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+<bean id="sale" class="sumdu.edu.ua.springexample.Promotion">
+    <property name="title" value="5% sale"></property>
+</bean> 
+    
 <bean id="soda" class="sumdu.edu.ua.springexample.Soda">
 <property name="name" value="Fanta"></property>
 <property name="size" value="330"/>
+<property name="prom" ref="sale"/>
 </bean>
 
 </beans>
