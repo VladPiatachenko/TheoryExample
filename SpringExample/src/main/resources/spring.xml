@@ -4,6 +4,9 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
                             http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<bean id="soda" class="sumdu.edu.ua.springexample.Soda"/>
+<bean id="soda" class="sumdu.edu.ua.springexample.Soda">
+<property name="name" value="Fanta"></property>
+<property name="size" value="330"/>
+</bean>
 
 </beans>

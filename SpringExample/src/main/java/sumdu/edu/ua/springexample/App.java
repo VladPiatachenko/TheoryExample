@@ -16,7 +16,6 @@ public class App {
         ApplicationContext factory = new ClassPathXmlApplicationContext("spring.xml");
         
         Soda a=(Soda) factory.getBean("soda");
-        a.setName("Cola");
         a.info();
     }
 }

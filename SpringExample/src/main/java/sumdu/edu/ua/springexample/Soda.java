@@ -10,7 +10,16 @@ package sumdu.edu.ua.springexample;
  */
 public class Soda {
     String name;
+    int size;
 
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+    
     public String getName() {
         return name;
     }
@@ -20,6 +29,6 @@ public class Soda {
     }
     
     public void info(){
-        System.out.println("It's "+name);
+        System.out.println("It's "+name+" in "+size+"ml glass!");
     }
 }
