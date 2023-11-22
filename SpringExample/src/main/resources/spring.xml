@@ -7,11 +7,21 @@
 <bean id="sale" class="sumdu.edu.ua.springexample.Promotion">
     <property name="title" value="5% sale"></property>
 </bean> 
-    
-<bean id="soda" class="sumdu.edu.ua.springexample.Soda">
+
+<bean id="sweat" class="sumdu.edu.ua.springexample.Topping">
+    <constructor-arg index="0" value="ice cream"></constructor-arg>
+</bean> 
+
+<bean id="ice" class="sumdu.edu.ua.springexample.Topping">
+    <constructor-arg index="0" value="ice"></constructor-arg>
+</bean> 
+
+
+<bean id="soda" class="sumdu.edu.ua.springexample.Soda" autowire="byName">
 <property name="name" value="Fanta"></property>
 <property name="size" value="330"/>
 <property name="prom" ref="sale"/>
+<!--<property name="sweat" ref="sweat"/>-->
 </bean>
 
 </beans>

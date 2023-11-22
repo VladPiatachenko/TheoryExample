@@ -12,7 +12,16 @@ public class Soda {
     String name;
     int size;
     Promotion prom;
+    Topping sweat;
 
+    public Topping getSweat() {
+        return sweat;
+    }
+
+    public void setSweat(Topping sweat) {
+        this.sweat = sweat;
+    }
+    
     public Promotion getProm() {
         return prom;
     }
@@ -38,7 +47,7 @@ public class Soda {
     }
     
     public void info(){
-        System.out.println("It's "+name+" in "+size+"ml glass!\n"+prom);
+        System.out.println("It's "+name+" with "+sweat.toString()+" in "+size+"ml glass!\n"+prom);
         
     }
 }
